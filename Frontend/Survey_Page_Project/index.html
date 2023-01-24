@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      body {
+        background-color: aqua;
+        font-family: Verdana;
+        text-align: center;
+      }
+      form {
+        background-color: whitesmoke;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .form-control label[for*="input"] {
+        display: inline;
+      }
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
+      .form-control select {
+        width: 100%;
+      }
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+      .form-control input[type="checkbox"] {
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: aqua;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <form id="form">
+      <div class="form-control">
+        <label for="name" id="label-name"> Name </label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+      <div class="form-control">
+        <label for="email" id="label-email"> Email </label>
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="form-control">
+        <label for="age" id="label-age"> Age </label>
+        <input type="text" id="age" placeholder="Enter your age" />
+      </div>
+      <div class="form-control">
+        <label for="role" id="label-role">
+          Which option best describes you?
+        </label>
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label>Would you suggest this survey to your friends?</label>
+        <label for="suggest-1">
+          <input type="radio" name="suggest" id="suggest-1" />Yes</label
+        >
+        <label for="suggest-2">
+          <input type="radio" name="suggest" id="suggest-2" />No</label
+        >
+        <label for="suggest-3">
+          <input type="radio" name="suggest" id="suggest-3" />Maybe</label
+        >
+      </div>
+      <div class="form-control">
+        <label
+          >Languages and Frameworks known
+          <small>(Check all that apply)</small></label
+        >
+        <input type="checkbox" name="input" /><label for="input-1">HTML</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-2">CSS</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-3">SASS</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-4"
+          >BOOTSTRAP</label
+        >
+        <br />
+        <input type="checkbox" name="input" /><label for="input-5"
+          >JAVASCRIPT</label
+        >
+        <br />
+        <input type="checkbox" name="input" /><label for="input-6">REACT</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-7">GIT</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-8">NODE</label>
+        <br />
+        <input type="checkbox" name="input" /><label for="input-9"
+          >EXPRESS</label
+        >
+        <br />
+        <input type="checkbox" name="input" /><label for="input-10"
+          >MONGODB</label
+        >
+        <br />
+      </div>
+      <div class="form-control">
+        <label for="comment">Any comments or suggesstions</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</html>
