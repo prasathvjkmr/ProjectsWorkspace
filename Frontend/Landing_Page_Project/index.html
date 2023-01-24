@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechTV Landing Page</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/simple-lightbox.min.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <h1>
+          <span class="tech">Tech</span>
+          <span class="tv">TV</span>
+          <span class="broadcast">📺</span>
+        </h1>
+      </a>
+
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stars" class="nav-link" id="nav-link">Stars</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >Stakeholders</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="intro-text">
+        <h1>
+          <span class="hear">You can hear the Tech</span><br />
+          <span class="connecting"> Connecting</span>
+        </h1>
+        <p>
+          An online streaming platform for technical information <br />
+          We also dedicate some special time to throwbacks cuz old is gold
+        </p>
+        <a href="#" class="btn red">Learn More</a>
+        <a href="#" class="btn blue">Subscribe</a>
+      </div>
+      <div class="i-frame">
+        <iframe
+          width="560"
+          height="315"
+          title="Youtube video player"
+          src="https://www.youtube.com/embed/_idz3jP9bxw"
+          frameborder="10"
+        ></iframe>
+        <div class="stand-1"></div>
+        <div class="stand-2"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h3>Watch the Tech</h3>
+      <p>
+        Our primary objective is to bring live technical news to tech fans all
+        around the world
+      </p>
+      <h3>Its not about the Tech Alone!</h3>
+      <p>
+        We also air documentaries specially made for the greats, lifestyle of
+        stars, news, and more.
+      </p>
+    </section>
+
+    <section class="stars" id="stars">
+      <div class="stars-gallery">
+        <a href="src/images/one.jpg" class="big">
+          <img src="src/images/one.jpg" alt="Dear" title="D" />
+        </a>
+
+        <a href="src/images/two.jpg" class="big">
+          <img src="src/images/two.jpg" alt="Forest" title="F" />
+        </a>
+
+        <a href="src/images/three.jpg" class="big">
+          <img src="src/images/three.jpg" alt="Water" title="W" />
+        </a>
+
+        <a href="src/images/four.jpg" class="big">
+          <img src="src/images/four.jpg" alt="Man" title="M" />
+        </a>
+
+        <a href="src/images/five.jpg" class="big"
+          ><img src="src/images/five.jpg" alt="Building" title="B" />
+        </a>
+
+        <a href="src/images/six.jpg " class="big">
+          <img src="src/images/six.jpg " alt="Beach" title="S" />
+        </a>
+      </div>
+    </section>
+
+    <section class="people" id="stakeholders">
+      <div class="stakeholders">
+        <div class="persons">
+          <div class="person-1">
+            <img src="https://picsum.photos/id/91/300/200" alt="Founder" />
+            <p class="name">Prasath</p>
+            <p class="role">Founder</p>
+          </div>
+          <div class="person-2">
+            <img src="https://picsum.photos/id/349/300/200" alt="MD" />
+            <p class="name">Vijay</p>
+            <p class="role">MD</p>
+          </div>
+          <div class="person-3">
+            <img src="https://picsum.photos/id/399/300/200" alt="Analyst" />
+            <p class="name">Thamizh</p>
+            <p class="role">Analyst</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub" id="sub">
+      <h3>Subscribe to our newsletter for updates</h3>
+      <form action="#">
+        <input type="email" name="email" id="email-sub" class="email-sub" />
+        <input
+          type="submit"
+          value="Subscribe"
+          id="submit-btn"
+          class="submit-btn"
+        />
+      </form>
+    </section>
+
+    <section class="social">
+      <h3>Connect with us on Social Media</h3>
+      <div class="socicons">
+        <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+      </div>
+    </section>
+
+    <footer>&copy;2020. All Rights Reserved</footer>
+
+    <i class="scroll-up" id="scroll-up">
+      <ion-icon
+        name="arrow-up-outline"
+        class="socicon up-arrow"
+        alt="up-arrow"
+      ></ion-icon>
+    </i>
+
+    <script src="src/js/scrollUp.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script src="src/js/hamburger.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="src/js/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox(".stars-gallery a");
+    </script>
+  </body>
+</html>
