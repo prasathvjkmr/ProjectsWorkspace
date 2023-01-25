@@ -1,0 +1,320 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#top {
+  color: rgb(245, 10, 10);
+  text-align: center;
+  font-size: 46px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+#top-1 {
+  text-align: center;
+  color: black;
+  font-size: 21px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+#navbar .logo {
+  display: block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#nav-content {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+ul li a {
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+ul li a:hover {
+  background-color: red;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+}
+
+#container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 63vh;
+}
+
+#container-1::before {
+  content: "";
+  background: url("https://picsum.photos/id/23/1000/600") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Ubuntu Mono", monospace;
+  margin-right: 45px;
+  font-weight: bold;
+  z-index: -1;
+  opacity: 0.89;
+  border: 2px solid black;
+  border-bottom-left-radius: 100px;
+}
+
+#row-1 {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 0.5rem;
+  transition: 1s ease-in;
+  border: 3px solid white;
+  border-radius: 15px;
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ubuntu Mono", monospace;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+#container-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#row-2 {
+  width: 24vw;
+  height: 21vh;
+  box-shadow: 2px 7px 16px 19px;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 38px;
+  border-radius: 40px;
+}
+#row-2::before {
+  content: "";
+  background: url("https://picsum.photos/id/225/400/200") no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+#row-3 {
+  position: relative;
+  width: 24vw;
+  height: 21vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 2px 7px 16px 19px;
+  margin-top: 51px;
+  margin-bottom: 51px;
+
+  margin-left: 38px;
+  border-radius: 40px;
+}
+#row-3::before {
+  content: "";
+  background: url("https://picsum.photos/id/63/400/200") no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+
+#top-3 {
+  text-align: center;
+  color: red;
+  font-family: "Ubuntu Mono", monospace;
+}
+#container-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 41px;
+}
+#row-4 {
+  width: 29vw;
+  height: 360px;
+  border: 2px solid black;
+  background: url("https://picsum.photos/id/431/400") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+#row-5 {
+  width: 29vw;
+  height: 360px;
+  border: 2px solid black;
+  background: url("https://picsum.photos/id/365/400") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+#row-6 {
+  width: 30vw;
+  height: 360px;
+  border: 2px solid black;
+  background: url("https://picsum.photos/id/326/400") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+}
+
+#contact-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  width: 92%;
+  padding: 0.5rem;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+  background-color: green;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type="reset"] {
+  background-color: lightskyblue;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: gray;
+}
+
+@media only screen and (max-width: 1131px) {
+  #row-4 {
+    width: 42vw;
+  }
+  #row-5 {
+    width: 45vw;
+  }
+  #row-6 {
+    margin-top: 20px;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 781px) {
+  #row-4 {
+    width: 84vw;
+    margin: auto;
+    margin-left: 22px;
+  }
+  #row-5 {
+    width: 84vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  #row-6 {
+    width: 84vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #row-4 {
+    width: 78vw;
+    margin: auto;
+    margin-left: 3px;
+  }
+  #row-5 {
+    width: 78vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 3px;
+  }
+  #row-6 {
+    width: 78vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 3px;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  #navbar {
+    height: 10vh;
+  }
+  #container-1::before {
+    height: 39vh;
+  }
+  #container-1 {
+    height: 44vh;
+  }
+}
